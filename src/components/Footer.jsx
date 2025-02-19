@@ -2,12 +2,12 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer>
-      <a href="https://github.com/carlosdpastrana" target="_blank" rel="noopener noreferrer">
-        <FaGithub size={30} color="#1a2b40" />
+    <footer className="footer">
+      <a href="https://github.com/carlosdpastrana" target="_blank" rel="noopener noreferrer" className="footer-icon">
+        <FaGithub size={30} />
       </a>
-      <a href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px' }}>
-        <FaLinkedin size={30} color="#1a2b40" />
+      <a href="https://linkedin.com/in/carlos-pastrana" target="_blank" rel="noopener noreferrer" className="footer-icon">
+        <FaLinkedin size={30} />
       </a>
     </footer>
   );

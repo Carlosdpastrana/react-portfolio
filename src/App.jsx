@@ -8,16 +8,20 @@ import Resume from './pages/Resume';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<AboutMe />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="app-container">
+      <Router>
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

@@ -1,15 +1,33 @@
 function Resume() {
     return (
-      <section>
+      <section className="resume-section">
         <h2>Resume</h2>
-        <a href="/path/to/your/resume.pdf" download>Download Resume</a>
-        <h3>Proficiencies:</h3>
+        <p>
+          <a href="/resume.pdf" download className="resume-link">
+            Download my resume
+          </a>
+        </p>
+  
+        <h3>Front-end Proficiencies</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>Responsive Design</li>
           <li>React</li>
-          {/* Add more as needed */}
+          <li>Bootstrap</li>
+        </ul>
+  
+        <h3>Back-end Proficiencies</h3>
+        <ul>
+          <li>APIs</li>
+          <li>Node</li>
+          <li>Express</li>
+          <li>MySQL, Sequelize</li>
+          <li>MongoDB, Mongoose</li>
+          <li>REST</li>
+          <li>GraphQL</li>
         </ul>
       </section>
     );

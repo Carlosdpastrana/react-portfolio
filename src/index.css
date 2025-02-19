@@ -98,14 +98,24 @@ header {
 }
 
 footer {
-  flex-shrink: 0;
-  background-color: #0f1a2e;
-  color: white;
+  margin-top: auto;
   text-align: center;
   padding: 10px 0;
+  display: flex;
+  bottom: 0px;
+  justify-content: center;
+  gap: 15px;
+  background-color: #0f1a2e;
 }
-footer:hover {
-  background-color: #005fa3;
+
+.footer-icon {
+  color: white;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #00b4d8; 
 }
 
 // Contact
@@ -219,4 +229,70 @@ button:hover {
 
 .project-info a:hover {
   text-decoration: underline;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1; 
+}
+
+footer {
+  background-color: #0f1a2e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+//Resume
+.resume-section {
+  background-color: #1a2b40;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.resume-link {
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.resume-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.resume-section h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #d1e7ff;
+}
+
+.resume-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.resume-section li {
+  margin-bottom: 5px;
 }

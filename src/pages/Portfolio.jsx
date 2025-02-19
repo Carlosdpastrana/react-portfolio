@@ -15,9 +15,9 @@ function Portfolio() {
 
       {
         title: 'Employee Tracker',
-        image: '/project2.jpg',
+        image: '/project3.jpg',
         deployedLink: 'https://example.com/project-two',
-        githubLink: 'https://github.com/Carlosdpastrana/HolidayCountdown.git'
+        githubLink: 'https://github.com/Carlosdpastrana/employee-tracker.git'
       },
     ];
   
